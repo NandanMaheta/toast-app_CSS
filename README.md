@@ -21,7 +21,7 @@ A **lightweight, customizable, and reusable toast notification system** built wi
 
 1️⃣ Clone the repository:  
 ```bash
-git clone https://github.com/yourusername/my-toast-app.git
+git clone https://github.com/NandanMaheta/my-toast-app.git
 cd my-toast-app
 
 
