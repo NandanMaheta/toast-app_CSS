@@ -1,6 +1,6 @@
-# 🚀 React Toast Notification System  
+# 🚀 React Toast Notification System
 
-A **lightweight, customizable, and reusable toast notification system** built with **React**. Provides feedback to users with different message types like **Success, Error, Warning, and Info**.  
+A **lightweight, customizable, and reusable toast notification system** built with **React**. Provides feedback to users with different message types like **Success, Error, Warning, and Info**. Used CSS Styling.
 
 ---
 
