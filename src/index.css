@@ -1,3 +1,7 @@
+/* index.css or a global CSS file */
 body {
   margin: 0;
+  padding: 0;
+  background-color: #f5f3ed; /* Your desired background color */
+  font-family: 'Roboto', sans-serif;
 }
