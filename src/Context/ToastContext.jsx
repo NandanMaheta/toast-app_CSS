@@ -16,7 +16,7 @@ export const ToastProvider = ({ children }) => {
 
 
   // Add a new toast notification
-  const addToast = useCallback((message, type = 'info', action) => {
+  const addToast = useCallback((message, type = 'info', duration=3000,action) => {
     const id = Math.random().toString(36).substr(2, 9);
     const newToast = { id, message, type, action };
     // Add new toast to the state
@@ -26,7 +26,7 @@ export const ToastProvider = ({ children }) => {
     // (Minor quirk: if manually removed before timer, timer still fires)
     setTimeout(() => {
       removeToast(id);
-    }, 3000);
+    }, duration);
   }, [removeToast]);
 
   // Provide the state and functions to the app
