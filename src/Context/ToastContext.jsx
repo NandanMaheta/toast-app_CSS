@@ -1,10 +1,10 @@
-// src/context/ToastContext.js
+
 import React, { createContext, useState, useCallback } from 'react';
 
 // Create a context for toast notifications
 export const ToastContext = createContext();
 
-// ToastProvider wraps the app and provides toast functions
+
 export const ToastProvider = ({ children }) => {
   // Array to hold our active toasts
   const [toasts, setToasts] = useState([]);
@@ -14,11 +14,11 @@ export const ToastProvider = ({ children }) => {
     setToasts(prevToasts => prevToasts.filter(toast => toast.id !== id));
   }, []);
 
+
   // Add a new toast notification
-  // NOTE: the id generation here is simple and might conflict in very rare cases :)
-  const addToast = useCallback((message, type = 'info', duration = 3000, action) => {
+  const addToast = useCallback((message, type = 'info', action) => {
     const id = Math.random().toString(36).substr(2, 9);
-    const newToast = { id, message, type, duration, action };
+    const newToast = { id, message, type, action };
     // Add new toast to the state
     setToasts(prevToasts => [...prevToasts, newToast]);
 
@@ -26,7 +26,7 @@ export const ToastProvider = ({ children }) => {
     // (Minor quirk: if manually removed before timer, timer still fires)
     setTimeout(() => {
       removeToast(id);
-    }, duration);
+    }, 3000);
   }, [removeToast]);
 
   // Provide the state and functions to the app

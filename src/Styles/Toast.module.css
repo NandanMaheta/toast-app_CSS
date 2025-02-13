@@ -4,7 +4,7 @@
 .toastContainer {
     position: fixed;
     top: 1rem;
-    right: 1rem;
+    right: 0.5rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -13,13 +13,13 @@
   
   /* Base toast styling */
   .toast {
-    position: relative;
+    /* position: relative; */
     background-color: #5783db;
-    padding: 1rem;
+    padding: 0.73rem;
     border-radius: 14px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    max-width: 90%;
+    
     
     display: flex;
     align-items: center;
@@ -56,7 +56,7 @@
   /* Message styling */
   .toastMessage {
     
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #333333;
     margin: 0;
   }
@@ -104,16 +104,16 @@
   @media (max-width: 600px) {
     .toast {
       max-width: 90%;
-      padding: 0.75rem 1rem;
+      padding: 0.55rem;
     }
     .toastIcon {
-      font-size: 1.25rem;
+      font-size: 1rem;
     }
     .toastMessage {
-      font-size: 0.875rem;
+      font-size: 0.6rem;
     }
     .toastAction {
-      font-size: 0.75rem;
+      font-size: 0.6rem;
       padding: 0.2rem 0.4rem;
     }
   }

@@ -1,7 +1,7 @@
 /* Home.module.css */
 
 .home {
-    padding: 2rem;
+    padding: 1rem;
     max-width: 800px;
     min-height: 100%;
     margin: 0 auto;
@@ -13,7 +13,7 @@
   .heading {
     text-align: center;
     margin-bottom: 1.5rem;
-    font-size: 2rem;
+    font-size: 3rem;
   }
   
   .buttonGroup {
@@ -28,8 +28,8 @@
     background-color: #2196f3;
     color: #ffffff;
     border: none;
-    padding: 0.75rem 1rem;
-    border-radius: 4px;
+    padding: 0.75rem;
+    border-radius: 40px;
     cursor: pointer;
     font-size: 1rem;
     transition: background-color 0.2s ease;
