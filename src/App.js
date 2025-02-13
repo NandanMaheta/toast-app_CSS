@@ -4,6 +4,7 @@ import { ToastProvider } from "./Context/ToastContext"
 import ToastContainer from "./Components/ToastContainer"
 import Home from "./Pages/Home"
 import CustomToast from './Components/customToast';
+import logo from "./assests/HORIZONTAL.avif"
 
 // Separate component to render ToastContainer so it can use context
 
@@ -13,7 +14,7 @@ function App() {
     <ToastProvider>
       <Home />
       <ToastContainer />
-      <CustomToast/>
+      <CustomToast logo={logo} message="Providing Robust solutions for Home Healthcare Firms." link="https://www.levich.co/"/>
     </ToastProvider>
   );
 }
